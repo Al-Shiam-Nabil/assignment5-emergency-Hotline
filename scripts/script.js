@@ -36,6 +36,7 @@ function callBtnFunction(name,num){
 
             // set history card
             historyContainer.appendChild(newDiv);
+             historyContainer.classList.add('pt-6');
         } else {
             alert(`❌ আপনার পর্যাপ্ত কয়েন নাই।কল করতে কমপক্ষে ২০ কয়েন লাগবে।`);
             return;
@@ -77,11 +78,12 @@ getId("card-parent").addEventListener("click", function (e) {
             e.target.parentNode.parentNode.parentNode.children[2].children[0]
                 .innerText;
         
-       callBtnFunction(serviceName,serviceNumber)
+       callBtnFunction(serviceName,serviceNumber);
     }
 });
 
 // clear all button functionality
 getId("clear-history-btn").addEventListener("click", function () {
     getId("history-container").innerHTML = "";
+    getId("history-container").classList.remove('pt-6');
 });
