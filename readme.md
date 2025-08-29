@@ -47,7 +47,7 @@ By using event delegation, we do not have to add separate event listeners for ea
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
-**Answer : ** The preventDefault() method is used to prevent the default behavior of an event.
+**Answer :** The preventDefault() method is used to prevent the default behavior of an event.
 
 The stopPropagation() method is used to stop event bubbling or capturing.
 
