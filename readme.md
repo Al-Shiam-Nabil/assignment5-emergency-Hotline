@@ -14,6 +14,19 @@
 **querySelectorAll:** The rules for writing this are also similar to CSS selectors. However, if there are multiple classes with the same name, all classes can be selected together. Then specific work can be done using forEach or for of loop. It returns nodeList. Which is basically static. Even if the DOM is changed using JavaScript, it does not update automatically.
 
 2. How do you **create and insert a new element into the DOM**?
+
+**Answer :** For this, first you need to create a new element. Then you need to add content to that element. Then you need to append the newly created element to its parent. For example:
+
+```    const parentContainer = document.getElementById('parent-container');
+    const newDiv = document.createElement("div");
+
+    newDiv.innerHTML = `
+       <div>
+                    Example of create and insert a new element into the DOM.
+                    </div>
+    `;
+    historyContainer.appendChild(newDiv);
+
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
