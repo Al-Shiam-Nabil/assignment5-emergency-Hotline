@@ -1,12 +1,9 @@
 
-
-## Create Readme
-
-### 6. Answer the following questions clearly:
+### 6. Question's Answer:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
-**Answer:**All of these are basically Dom selection methods. However, there are some differences between them in the selection process. For example:
+**Answer:** All of these are basically Dom selection methods. However, there are some differences between them in the selection process. For example:
 
 **getElementById:** Targets only one element. Because the ID is unique. When we have to select only one element by targeting it, we can select in this process.
 
