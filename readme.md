@@ -32,6 +32,12 @@
 
 
 3. What is **Event Bubbling** and how does it work?
+
+**Answer :** When we add an event to a parent element, the event also fires on its children. This is the default functionality of the browser.
+
+When we click somewhere in the browser, the browser does not understand where the click occurred. The browser then goes from the root element down step by step to the last element. This is called the capture phase. Then it starts rising step by step like a bubble, which is basically the bubbling phase. The event is triggered where it reaches the target phase.
+
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
