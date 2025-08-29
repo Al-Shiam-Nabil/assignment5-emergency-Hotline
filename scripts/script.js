@@ -61,9 +61,10 @@ getId("card-parent").addEventListener("click", function (e) {
   if (btnClick.includes("call-btn-click")) {
     //   get card data
     const serviceName =
-      e.target.parentNode.parentNode.children[1].children[0].innerText;
+      e.target.parentElement.parentElement.children[1].children[0].innerText;
+
     const serviceNumber =
-      e.target.parentNode.parentNode.children[2].children[0].innerText;
+      e.target.parentElement.parentElement.children[2].children[0].innerText;
 
     callBtnFunction(serviceName, serviceNumber);
   }
@@ -71,10 +72,10 @@ getId("card-parent").addEventListener("click", function (e) {
   //call icon click
   if (btnClick.includes("call-icon")) {
     const serviceName =
-      e.target.parentNode.parentNode.parentNode.children[1].children[0]
+      e.target.parentElement.parentElement.parentElement.children[1].children[0]
         .innerText;
     const serviceNumber =
-      e.target.parentNode.parentNode.parentNode.children[2].children[0]
+      e.target.parentElement.parentElement.parentElement.children[2].children[0]
         .innerText;
 
     callBtnFunction(serviceName, serviceNumber);
