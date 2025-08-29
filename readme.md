@@ -17,7 +17,8 @@
 
 **Answer :** For this, first you need to create a new element. Then you need to add content to that element. Then you need to append the newly created element to its parent. For example:
 
-```    const parentContainer = document.getElementById('parent-container');
+```  
+  const parentContainer = document.getElementById('parent-container');
     const newDiv = document.createElement("div");
 
     newDiv.innerHTML = `
@@ -25,7 +26,9 @@
                     Example of create and insert a new element into the DOM.
                     </div>
     `;
-    historyContainer.appendChild(newDiv);
+    
+   parentContainer.appendChild(newDiv);
+    ```
 
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
