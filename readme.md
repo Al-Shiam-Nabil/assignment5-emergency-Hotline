@@ -26,9 +26,8 @@
                     Example of create and insert a new element into the DOM.
                     </div>
     `;
-    
-   parentContainer.appendChild(newDiv);
-    ```
+
+   parentContainer.appendChild(newDiv);```
 
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
